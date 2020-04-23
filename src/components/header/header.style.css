@@ -3,6 +3,7 @@
 }
 
 .text {
+  font-family: 'Roboto', sans-serif;
   display: grid;
   justify-self: center;
   align-self: center;
@@ -10,7 +11,7 @@
   font-size: 7em;
   font-weight: bold;
   font-family: sans-serif;
-  text-shadow: -4px 4px 13px rgba(0,0,0,0.5), 
-               4px -4px 13px rgba(255,255,255,0.8);
+  text-shadow: -4px 4px 12px #a9a9a9, 
+               4px -4px 12px #d7d7d7;
   position: relative;
 }
