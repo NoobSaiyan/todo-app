@@ -1,0 +1,8 @@
+form{
+    display: grid;
+    width: 70vw;
+    grid-template-columns: auto 10%;
+    align-self: center;
+    background-color: red;
+    font-size: 50%;
+}
