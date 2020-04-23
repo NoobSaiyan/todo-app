@@ -1,0 +1,8 @@
+.list{
+    display: grid;
+    justify-content: center;
+    align-content: initial;
+}
+.card{
+    height: 100px;
+}

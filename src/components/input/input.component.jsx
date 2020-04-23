@@ -4,14 +4,19 @@ class InputBox extends React.Component{
     state = {
         text: ""
     }
-    
+
     handleChange = e => {
         this.setState({text: e.target.value})    
     }
     handleSubmit = e => {
-        console.log(this.state.text)
-        this.setState({text: ""});
+        const {addItem} = this.props;
         e.preventDefault()
+        addItem(this.state.text)
+        //timepass logging text of textbox
+        console.log(this.state.text)
+        //clearing
+        this.setState({text: ""})
+        
     }
     render(){
         return (

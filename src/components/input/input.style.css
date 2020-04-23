@@ -1,8 +1,9 @@
 form{
     display: grid;
-    width: 70vw;
-    grid-template-columns: auto 10%;
-    align-self: center;
+    width: 50vw;
+    grid-template-columns: auto 15%;
+    align-self: baseline;
+    justify-self: center;
     background-color: red;
     font-size: 50%;
 }
