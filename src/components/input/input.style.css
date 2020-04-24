@@ -23,10 +23,12 @@ form{
 .button{
     
     color: #303030;
+    font-weight: bold;
     font-size: 40px;
     font-family: 'Roboto', sans-serif;
     outline: none;
     margin-left: 5px;
+    cursor: pointer;
     border: none;
     border-radius: 20px;
     background: linear-gradient(145deg,#cdcdcd, #adadad);

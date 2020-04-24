@@ -15,12 +15,22 @@ class App extends Component{
   addItem = item => {
     this.setState(prev => ({items: prev.items.concat(item)}))
   }
+
+  delItem = id => {
+    console.log("aaaaaaaaaaaaaaaaaaaaaaaa")
+    const filteredItems = this.state.items.filter(item => {
+      return (item !== id)
+    })
+    this.setState( {items: filteredItems} )
+  }
+
   render(){
+    console.log("# "+this.state.items)
     return(
       <div className = "App">
         <Header/>
-        <InputBox addItem = {this.addItem} />
-        <List items = {this.state.items}/>
+        <InputBox addItem={this.addItem} />
+        <List items={this.state.items}  delete={this.delItem}/>
       </div>
     )
   }

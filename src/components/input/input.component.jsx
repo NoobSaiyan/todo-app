@@ -12,8 +12,8 @@ class InputBox extends React.Component{
         const {addItem} = this.props;
         e.preventDefault()
         addItem(this.state.text)
-        //timepass logging text of textbox
-        console.log(this.state.text)
+        //testing input in console
+        console.log( "Checking input value -" + this.state.text)
         //clearing
         this.setState({text: ""})
         

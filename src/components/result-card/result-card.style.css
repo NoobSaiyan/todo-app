@@ -1,0 +1,133 @@
+@keyframes popout {
+    from{transform:scale(0)}
+    80%{transform:scale(1.05)}
+    to{transform:scale(1)}
+}
+/* whole card styling (base container) */
+.item{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr 0.5fr;
+    animation: popout 0.5s ease-in-out;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 50vw;
+    border-radius: 22px;
+    background: #c0c0c0;
+    box-shadow:  3px 3px 10px #a9a9a9, 
+                -3px -3px 10px #d7d7d7;
+}
+
+/* check box styling */
+.checkbox-label {
+    display: block;
+    position: relative;
+    margin: auto;
+    cursor: pointer;
+    font-size: 22px;
+    line-height: 24px;
+    height: 24px;
+    width: 24px;
+    clear: both;
+}
+.checkbox-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.checkbox-label .checkbox-custom {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 24px;
+    width: 24px;
+    background-color: transparent;
+    border-radius: 10px;
+    transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    /* border: 2px solid #FFFFFF; */
+    box-shadow:  3px 3px 5px #a9a9a9, 
+                -3px -3px 5px #d7d7d7;
+}
+.checkbox-label input:checked ~ .checkbox-custom {
+    background-color: #c0c0c0;
+    border-radius: 10px;
+    -webkit-transform: rotate(0deg) scale(1);
+    -ms-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+    opacity:1;
+    box-shadow:  3px 3px 5px #a9a9a9, 
+                -3px -3px 5px #d7d7d7;
+}
+.checkbox-label .checkbox-custom::after {
+    position: absolute;
+    content: "";
+    left: 10px;
+    top: 10px;
+    height: 0px;
+    width: 0px;
+    border-radius: 10px;
+    border: solid #303030;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(0deg) scale(0);
+    -ms-transform: rotate(0deg) scale(0);
+    transform: rotate(0deg) scale(0);
+    opacity:1;
+    transition: all 0.2s ease-out;
+}
+.checkbox-label input:checked ~ .checkbox-custom::after {
+  -webkit-transform: rotate(45deg) scale(1);
+  -ms-transform: rotate(45deg) scale(1);
+  transform: rotate(45deg) scale(1);
+  opacity:1;
+  left: 8px;
+  top: 3px;
+  width: 6px;
+  height: 12px;
+  border: solid #303030;
+  border-width: 0 2px 2px 0;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+/* main result section styling */
+.result{
+    color: #303030;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 5px;
+    height: 50px;
+}
+
+/* delete button */
+.delete{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    font-size: 20px;
+    color: red;
+}
+
+/* delete button */
+.edit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    font-size: 10px;
+}
+svg{
+    height: 40%;
+    width: 40%;
+    fill: #296d98;
+}
+  
