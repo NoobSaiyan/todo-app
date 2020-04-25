@@ -21,7 +21,7 @@ class InputBox extends React.Component{
     render(){
         return (
             <form onSubmit = {this.handleSubmit}>
-                <input className="txt" value={this.state.text} onChange={this.handleChange} placeholder="Enter your task" />
+                <input required className="txt" value={this.state.text} onChange={this.handleChange} placeholder="Enter your task" />
                 <input className="button" type="submit" value="+"/>
             </form>
         )
