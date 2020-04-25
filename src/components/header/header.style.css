@@ -5,6 +5,7 @@
 .text {
   font-family: 'Roboto', sans-serif;
   display: grid;
+  grid-column: 2;
   justify-self: center;
   align-self: center;
   color: #c0c0c0;

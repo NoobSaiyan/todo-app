@@ -9,6 +9,7 @@
   width: 100vw;
   display: grid;
   grid-template-rows: 2fr 1fr 6fr;
+  grid-template-columns: 2fr 5fr 2fr;
   justify-content: center;
 
   background-color: #c0c0c0;

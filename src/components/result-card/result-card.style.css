@@ -93,22 +93,10 @@
   border-radius: 0;
 }
 
-/* main result section styling */
-.result{
-    color: #303030;
-    border: none;
-    outline: none;
-    background-color: transparent;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-    font-family: 'Roboto', sans-serif;
-    padding-left: 5px;
-    height: 50px;
-}
-
 /* delete button */
 .delete{
+    grid-row: 1;
+    grid-column: 3;
     display: flex;
     align-items: center;
     font-weight: bold;

@@ -28,7 +28,7 @@ class Editable extends React.Component{
         return(
             <form onSubmit={this.handleClick} className="container"> 
                 {this.state.editing ? 
-                    (<input className="edit-box" ref={node => this.editInput = node} onChange={this.handleChange} type="text" value={this.props.result} />) 
+                    (<input required spellCheck="false" className="edit-box" ref={node => this.editInput = node} onChange={this.handleChange} type="text" value={this.props.result} />) 
                     : 
                     (<span className="display">{this.props.result}</span>)
                 }
